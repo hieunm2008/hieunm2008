@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic CV and interactive algorithm labs for Hieu Nguyen." />
+  <title>Hieu Nguyen — Academic CV</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"></path></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-3.3c.04-1.03-.34-2.03-1.06-2.77 3.5-.39 7.18-1.72 7.18-7.78a6.08 6.08 0 0 0-1.6-4.22 5.65 5.65 0 0 0-.15-4.16s-1.3-.42-4.27 1.6a14.7 14.7 0 0 0-7.78 0C4.35-.74 3.05-.32 3.05-.32a5.65 5.65 0 0 0-.15 4.16 6.08 6.08 0 0 0-1.6 4.22c0 6.05 3.67 7.4 7.17 7.79a3.08 3.08 0 0 0-.9 2.38V22"></path><path d="M9 22v-3.3c0-.8-.3-1.57-.85-2.15M9 22c-3.1.96-3.75-1.5-3.75-1.5-.5-1.3-1.25-1.65-1.25-1.65"></path></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 10v6M8 7.5v.01M12 16v-3.2a2.8 2.8 0 0 1 5.6 0V16M12 10v6"></path></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"></path><path d="M8 6H4v1a4 4 0 0 0 4 4M16 6h4v1a4 4 0 0 1-4 4M12 13v4M8 21h8M9 17h6"></path></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></symbol>
+    <symbol id="i-forward" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"></path></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"></path></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4Z"></path><path d="M17 9a5 5 0 0 1 0 6M19.5 6.5a9 9 0 0 1 0 11"></path></symbol>
+    <symbol id="i-volume-off" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4Z"></path><path d="m18 9 4 6M22 9l-4 6"></path></symbol>
+  </svg>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="#top">Hieu <i>Nguyen</i></a>
+      <nav aria-label="Primary navigation">
+        <a href="#focus" data-copy="navFocus">01 Focus</a><a href="#education" data-copy="navEducation">02 Education</a><a href="#skills" data-copy="navSkills">03 Skills</a><a href="#labs" data-copy="navLabs">04 Labs</a><a href="#achievements" data-copy="navAchievements">05 Achievements</a><a href="#projects" data-copy="navProjects">06 Projects</a><a href="#contact" data-copy="navContact">07 Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="lang-button" id="languageButton" type="button" aria-label="Switch language">VI</button>
+        <button class="icon-button" id="themeButton" type="button" aria-label="Switch color theme">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell" id="top">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <span class="eyebrow" data-copy="heroEyebrow">Academic profile</span>
+        <h1 id="displayName">Hieu Nguyen</h1>
+        <p class="role" data-copy="heroRole">Computer Science student at the University of Information Technology, pursuing the field of AI.</p>
+        <div class="contact-row">
+          <a href="mailto:hieunguyen.17022008@gmail.com"><svg class="svg-icon"><use href="#i-mail"></use></svg>hieunguyen.17022008@gmail.com</a>
+          <span><svg class="svg-icon"><use href="#i-pin"></use></svg><span data-copy="location">Ho Chi Minh City, Vietnam</span></span>
+          <a href="https://github.com/hieunm2008" target="_blank" rel="noreferrer"><svg class="svg-icon"><use href="#i-github"></use></svg>GitHub</a>
+          <a href="https://linkedin.com/in/hieunm2008" target="_blank" rel="noreferrer"><svg class="svg-icon"><use href="#i-linkedin"></use></svg>LinkedIn</a>
+        </div>
+        <div class="profile-cards" aria-label="Competitive programming and code profiles">
+          <a class="profile-card" href="https://oj.vnoi.info/user/hieuhfgr" target="_blank" rel="noreferrer">
+            <div class="platform"><svg class="svg-icon platform-icon"><use href="#i-trophy"></use></svg>VNOI <span class="arrow">↗</span></div><div class="handle">hieuhfgr</div>
+            <div class="snapshot" data-copy="vnoiMetric">Snapshot: Rating 1671 · 669 solved</div>
+          </a>
+          <a class="profile-card" href="https://codeforces.com/profile/x26" target="_blank" rel="noreferrer">
+            <div class="platform"><svg class="svg-icon platform-icon"><use href="#i-code"></use></svg>Codeforces <span class="arrow">↗</span></div><div class="handle">x26</div>
+            <div class="card-copy" data-copy="cfDesc">Competitive programming profile</div>
+          </a>
+          <a class="profile-card" href="https://github.com/hieunm2008" target="_blank" rel="noreferrer">
+            <div class="platform"><svg class="svg-icon platform-icon"><use href="#i-github"></use></svg>GitHub <span class="arrow">↗</span></div><div class="handle">hieunm2008</div>
+            <div class="card-copy" data-copy="ghDesc">Code and project profile</div>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="hieu-nguyen-avatar.png" alt="Hieu Nguyen" />
+      </div>
+    </section>
+
+    <section class="section reveal" id="focus">
+      <div class="section-head"><span class="number">01</span><h2 data-copy="focusTitle">Research focus</h2></div>
+      <p class="section-intro" data-copy="focusIntro">I am building a strong foundation in computer science through algorithms, competitions, and practical exploration of artificial intelligence.</p>
+      <div class="focus-grid" id="focusGrid"></div>
+    </section>
+
+    <section class="section reveal" id="education">
+      <div class="section-head"><span class="number">02</span><h2 data-copy="educationTitle">Education</h2></div>
+      <div class="timeline" id="educationList"></div>
+    </section>
+
+    <section class="section reveal" id="skills">
+      <div class="section-head"><span class="number">03</span><h2 data-copy="skillsTitle">Skills</h2></div>
+      <div class="skill-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section reveal" id="labs">
+      <div class="section-head"><span class="number">04</span><h2 data-copy="labsTitle">Labs</h2></div>
+      <p class="section-intro" data-copy="labsIntro">Small, client-side simulations that connect readable Python with algorithmic intuition. They are educational visualizations, not a Python runtime.</p>
+      <div class="lab-card">
+        <div class="lab-terminal-bar"><span class="terminal-live"><i></i><span>Live workbench</span></span><span id="labEventLog">Ready · awaiting input</span></div>
+        <div class="lab-tabs" role="tablist" aria-label="Labs">
+          <button class="lab-tab" type="button" role="tab" data-lab="bfs" aria-selected="true">BFS Grid Explorer</button>
+          <button class="lab-tab" type="button" role="tab" data-lab="linear" aria-selected="false">Linear Regression</button>
+          <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="true" aria-label="Sound on" title="Sound on"><svg class="svg-icon"><use href="#i-volume"></use></svg></button>
+        </div>
+        <div class="lab-body">
+          <aside class="controls" id="labControls"></aside>
+          <div class="visual-area">
+            <section class="simulation">
+              <div class="simulation-head"><span id="simulationTitle">BFS Grid Explorer</span><span><span class="lab-stat" id="labStat">STEPS 0</span> <span class="status" id="labStatus" aria-live="polite">Ready</span></span></div>
+              <div class="simulation-content" id="simulationContent"></div>
+            </section>
+            <section class="code-box" aria-label="Python code">
+              <div class="code-title">Python · reference implementation</div>
+              <pre id="labCode"></pre>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="achievements">
+      <div class="section-head"><span class="number">05</span><h2 data-copy="achievementsTitle">Achievements</h2></div>
+      <div class="achievements" id="achievementsList"></div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-head"><span class="number">06</span><h2 data-copy="projectsTitle">Projects</h2></div>
+      <div class="timeline" id="projectsList"></div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="section-head"><span class="number">07</span><h2 data-copy="contactTitle">Let’s connect</h2></div>
+      <p class="section-intro" data-copy="contactIntro">Open to conversations about algorithms, research, and learning together.</p>
+      <div class="contact-row"><a href="mailto:hieunguyen.17022008@gmail.com">hieunguyen.17022008@gmail.com</a><a href="https://github.com/hieunm2008" target="_blank" rel="noreferrer">github.com/hieunm2008</a><a href="https://linkedin.com/in/hieunm2008" target="_blank" rel="noreferrer">linkedin.com/in/hieunm2008</a></div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> <span id="footerName">Hieu Nguyen</span></footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
