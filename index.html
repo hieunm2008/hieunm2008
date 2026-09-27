@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Academic CV and interactive algorithm labs for Hieu Nguyen." />
   <title>Hieu Nguyen — Academic CV</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
@@ -29,7 +32,7 @@
         <a href="#focus" data-copy="navFocus">01 Focus</a><a href="#education" data-copy="navEducation">02 Education</a><a href="#skills" data-copy="navSkills">03 Skills</a><a href="#labs" data-copy="navLabs">04 Labs</a><a href="#achievements" data-copy="navAchievements">05 Achievements</a><a href="#projects" data-copy="navProjects">06 Projects</a><a href="#contact" data-copy="navContact">07 Contact</a>
       </nav>
       <div class="actions">
-        <button class="lang-button" id="languageButton" type="button" aria-label="Switch language">VI</button>
+        <button class="lang-button" id="languageButton" type="button" aria-label="Switch language">EN</button>
         <button class="icon-button" id="themeButton" type="button" aria-label="Switch color theme">◐</button>
       </div>
     </div>
@@ -38,19 +41,20 @@
   <main class="shell" id="top">
     <section class="hero reveal">
       <div class="hero-copy">
-        <span class="eyebrow" data-copy="heroEyebrow">Academic profile</span>
         <h1 id="displayName">Hieu Nguyen</h1>
         <p class="role" data-copy="heroRole">Computer Science student at the University of Information Technology, pursuing the field of AI.</p>
+        <div class="hero-tags" aria-label="Focus tags"><span class="hero-tag">C++</span><span class="hero-tag">PYTHON</span><span class="hero-tag">ALGORITHMS</span><span class="hero-tag">AI</span></div>
         <div class="contact-row">
           <a href="mailto:hieunguyen.17022008@gmail.com"><svg class="svg-icon"><use href="#i-mail"></use></svg>hieunguyen.17022008@gmail.com</a>
           <span><svg class="svg-icon"><use href="#i-pin"></use></svg><span data-copy="location">Ho Chi Minh City, Vietnam</span></span>
           <a href="https://github.com/hieunm2008" target="_blank" rel="noreferrer"><svg class="svg-icon"><use href="#i-github"></use></svg>GitHub</a>
           <a href="https://linkedin.com/in/hieunm2008" target="_blank" rel="noreferrer"><svg class="svg-icon"><use href="#i-linkedin"></use></svg>LinkedIn</a>
         </div>
+        <blockquote class="quote">“Genius is one percent inspiration and ninety-nine percent perspiration.”<cite>— Thomas Edison</cite></blockquote>
         <div class="profile-cards" aria-label="Competitive programming and code profiles">
           <a class="profile-card" href="https://oj.vnoi.info/user/hieuhfgr" target="_blank" rel="noreferrer">
             <div class="platform"><svg class="svg-icon platform-icon"><use href="#i-trophy"></use></svg>VNOI <span class="arrow">↗</span></div><div class="handle">hieuhfgr</div>
-            <div class="snapshot" data-copy="vnoiMetric">Snapshot: Rating 1671 · 669 solved</div>
+            <div class="snapshot" data-copy="vnoiMetric">Rating 1671</div>
           </a>
           <a class="profile-card" href="https://codeforces.com/profile/x26" target="_blank" rel="noreferrer">
             <div class="platform"><svg class="svg-icon platform-icon"><use href="#i-code"></use></svg>Codeforces <span class="arrow">↗</span></div><div class="handle">x26</div>
@@ -65,10 +69,29 @@
       <div class="hero-photo">
         <img src="hieu-nguyen-avatar.png" alt="Hieu Nguyen" />
       </div>
+      <svg class="neural-network" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <g class="neural-links">
+          <path d="M570 92 674 153 790 91 890 157 957 105" />
+          <path d="M570 92 603 254 721 310 674 153" />
+          <path d="M674 153 820 233 890 157" />
+          <path d="M603 254 535 390 721 310 820 233 852 405 721 310 663 493" />
+          <path d="M820 233 956 311 852 405 928 486" />
+          <path d="M535 390 663 493 852 405" />
+        </g>
+        <g class="neural-nodes">
+          <circle cx="570" cy="92" r="5" /><circle cx="674" cy="153" r="7" />
+          <circle cx="790" cy="91" r="4" /><circle cx="890" cy="157" r="6" />
+          <circle cx="957" cy="105" r="4" /><circle cx="603" cy="254" r="5" />
+          <circle cx="721" cy="310" r="8" /><circle cx="820" cy="233" r="5" />
+          <circle cx="535" cy="390" r="4" /><circle cx="852" cy="405" r="7" />
+          <circle cx="663" cy="493" r="5" /><circle cx="956" cy="311" r="4" />
+          <circle cx="928" cy="486" r="5" />
+        </g>
+      </svg>
     </section>
 
     <section class="section reveal" id="focus">
-      <div class="section-head"><span class="number">01</span><h2 data-copy="focusTitle">Research focus</h2></div>
+      <div class="section-head"><span class="number">01</span><h2 data-copy="focusTitle">Skills</h2></div>
       <p class="section-intro" data-copy="focusIntro">I am building a strong foundation in computer science through algorithms, competitions, and practical exploration of artificial intelligence.</p>
       <div class="focus-grid" id="focusGrid"></div>
     </section>

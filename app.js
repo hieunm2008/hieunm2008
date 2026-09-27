@@ -7,8 +7,8 @@
       en: {
         heroEyebrow:'Academic profile', heroRole:'Computer Science student at the University of Information Technology, pursuing the field of AI.', location:'Ho Chi Minh City, Vietnam',
         navFocus:'01 Focus',navEducation:'02 Education',navSkills:'03 Skills',navLabs:'04 Labs',navAchievements:'05 Achievements',navProjects:'06 Projects',navContact:'07 Contact',
-        vnoiMetric:'Static snapshot: Rating 1671 · 669 solved',cfDesc:'Competitive programming profile',ghDesc:'Code and project profile',
-        focusTitle:'Research focus',focusIntro:'I am building a strong foundation in computer science through algorithms, competitions, and practical exploration of artificial intelligence.',
+        vnoiMetric:'Rating 1671',cfDesc:'Expert',ghDesc:'Projects',
+        focusTitle:'Focus',focusIntro:'I am building a strong foundation in computer science through algorithms, competitions, and practical exploration of artificial intelligence.',
         educationTitle:'Education',skillsTitle:'Skills',labsTitle:'Labs',labsIntro:'Small, client-side simulations that connect readable Python with algorithmic intuition. They are educational visualizations, not a Python runtime.',
         achievementsTitle:'Achievements',projectsTitle:'Projects',contactTitle:'Let’s connect',contactIntro:'Open to conversations about algorithms, research, and learning together.',
         focus:[
@@ -26,7 +26,7 @@
           ['AI foundation','Basic understanding of artificial intelligence and machine learning concepts.']
         ],
         achievements:[
-          ['Third Prize','National Excellent Student Competition in Informatics · 2025 — 2026'],['Consolation Prize','National Excellent Student Competition in Informatics · 2024 — 2025'],
+          ['Third Prize','National Excellent Student Competition in Informatics · 2025 — 2026'],['Honorable Mention','National Excellent Student Competition in Informatics · 2024 — 2025'],
           ['First Prize','Hue-ICT Challenge, Pro Challenge · 2026'],['Two-time Gold Medal','Olympic 30/4 · 2024, 2025'],
           ['Bronze Prize','High School Division, Namwon Mayor’s Cup International Drone Coding Competition · Korea, 2023']
         ],
@@ -39,7 +39,7 @@
         heroEyebrow:'Hồ sơ học thuật', heroRole:'Sinh viên ngành Khoa học máy tính tại Trường Đại học Công nghệ Thông tin, theo đuổi lĩnh vực về AI.', location:'Thành phố Hồ Chí Minh, Việt Nam',
         navFocus:'01 Định hướng',navEducation:'02 Học vấn',navSkills:'03 Kỹ năng',navLabs:'04 Labs',navAchievements:'05 Thành tích',navProjects:'06 Dự án',navContact:'07 Liên hệ',
         vnoiMetric:'Ảnh chụp tĩnh: Rating 1671 · 669 bài đã giải',cfDesc:'Hồ sơ lập trình thi đấu',ghDesc:'Hồ sơ mã nguồn và dự án',
-        focusTitle:'Định hướng nghiên cứu',focusIntro:'Tôi xây dựng nền tảng Khoa học máy tính qua thuật toán, các kỳ thi và việc khám phá thực tế về trí tuệ nhân tạo.',
+        focusTitle:'Định hướng',focusIntro:'Tôi xây dựng nền tảng Khoa học máy tính qua thuật toán, các kỳ thi và việc khám phá thực tế về trí tuệ nhân tạo.',
         educationTitle:'Học vấn',skillsTitle:'Kỹ năng',labsTitle:'Labs',labsIntro:'Các mô phỏng chạy trực tiếp trên trình duyệt, kết nối Python dễ đọc với trực giác thuật toán. Đây là minh hoạ học thuật, không phải môi trường chạy Python.',
         achievementsTitle:'Thành tích',projectsTitle:'Dự án',contactTitle:'Kết nối',contactIntro:'Sẵn sàng trao đổi về thuật toán, nghiên cứu và cùng học hỏi.',
         focus:[
@@ -81,7 +81,7 @@
       document.getElementById('educationList').innerHTML=entries(d.education);
       document.getElementById('projectsList').innerHTML=entries(d.projects);
       document.getElementById('achievementsList').innerHTML=d.achievements.map(x=>'<article class="achievement"><strong>'+x[0]+'</strong><span>'+x[1]+'</span></article>').join('');
-      document.getElementById('languageButton').textContent=lang==='en'?'VI':'EN';
+      document.getElementById('languageButton').textContent=lang==='en'?'EN':'VI';
     }
     document.getElementById('languageButton').addEventListener('click',()=>{lang=lang==='en'?'vi':'en';renderLanguage();});
     document.getElementById('year').textContent=new Date().getFullYear();
