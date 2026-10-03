@@ -26,8 +26,8 @@
 - **Focus:** Algorithms, data structures, competitive programming, AI 
 
 ## 📫 Contact
-Email: hieunguyen.17022008@gmail.com
-
+- Email: hieunguyen.17022008@gmail.com
+- Linkedin: https://linkedin.com/in/hieunm2008
 ---
 
 <p align="center">⭐ Thanks for visiting!</p>
